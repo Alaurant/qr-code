@@ -1,0 +1,82 @@
+:root {
+    /* Color - Slate */
+    --slate-900: #1F314F;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF; 
+
+    --white: #FFFFFF;
+
+    /* Typography */
+    --font-present-1: 'Outfit Bold', sans-serif;
+    --font-present-2: 'Outfit Regular', sans-serif;
+
+    /* Spacing */
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-present-2);
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    background-color: var(--slate-300);
+    place-items: center;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/** QR Container **/
+.qr-container {
+    width: max(20%, 20rem);
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/** Card Component **/
+.card {
+    padding: 1.2rem;
+    text-align: center;
+    gap: 0.2rem;
+}
+.card h1 {
+    font-family: var(--font-present-1);
+    color: var(--slate-900);
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    padding-top: 1rem;
+}
+.card p {
+    font-family: var(--font-present-2);
+    color: var(--slate-500);
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+/** Image Block **/
+.img-block img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
