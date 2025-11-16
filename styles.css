@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 :root {
     /* Color - Slate */
     --slate-900: #1F314F;
@@ -7,8 +8,7 @@
     --white: #FFFFFF;
 
     /* Typography */
-    --font-present-1: 'Outfit Bold', sans-serif;
-    --font-present-2: 'Outfit Regular', sans-serif;
+    --font-present: 'Outfit', sans-serif;
 
     /* Spacing */
     --spacing-500: 40px;
@@ -30,7 +30,7 @@ body {
     scrollbar-width: none; /* for Firefox */
     display: flex;
     justify-content: center;
-    font-family: var(--font-present-2);
+    font-family: var(--font-present);
     font-size: 15px;
     line-height: 1.4;
     letter-spacing: 0.2px;
@@ -49,16 +49,16 @@ body::-webkit-scrollbar {
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
 /** Card Component **/
 .card {
-    padding: 1.2rem;
     text-align: center;
     gap: 0.2rem;
 }
 .card h1 {
-    font-family: var(--font-present-1);
+    font-weight: 700;
     color: var(--slate-900);
     font-size: 22px;
     line-height: 1.2;
@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
     padding-top: 1rem;
 }
 .card p {
-    font-family: var(--font-present-2);
+    font-weight: 400;
     color: var(--slate-500);
     font-size: 15px;
     line-height: 1.4;
